@@ -7,6 +7,6 @@ def line(customer)
   elsif customer.length > 0 
     customer.each_with_index |name, index|
       customer_line.push("#{index}. #{name}")
-    
   end
+  puts 
 end
