@@ -5,7 +5,7 @@ def line(customer)
   if customer.length == 0 
     puts "The line is currently empty."
   else
-      customer.each.with_index |name, index|
+      customer.each.with_index do |name, index|
         customer_line.push("#{index}. #{name}")
       end
   puts "The line is currently: #{customer_line.join(" ")}"
