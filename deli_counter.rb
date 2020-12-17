@@ -8,5 +8,5 @@ def line(customer)
     customer.each_with_index |name, index|
       customer_line.push("#{index}. #{name}")
   end
-  puts "The line is currently: #{customer_line
+  puts "The line is currently: #{customer_line.join(" ")}"
 end
